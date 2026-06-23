@@ -1,37 +1,31 @@
-# Local credentials and runtime state
-/config.json
-/session.json
-/app_settings.json
-/captured_api.json
-/download_history.db
+# .gitignore
+
+# ---- 敏感数据 / 个人配置（请勿提交）----
+config.json
+session.json
+app_settings.json
+captured_api.json
+download_history.db
 *.db
-*.sqlite
-*.sqlite3
 *.log
 
-# Build and release outputs
-bin/
-obj/
-**/bin/
-**/obj/
-/dist-release/
-*.nupkg
-*.msix
-*.msixbundle
-
-# IDE and user-specific files
-.vs/
-.idea/
-.vscode/
-*.user
-*.suo
-
-# Python cache and local environments
+# ---- Python ----
 __pycache__/
-*.py[cod]
+*.pyc
+*.pyo
+env/
 .venv/
 venv/
 
-# Download/runtime leftovers
+# ---- 下载产物 / 发布包 ----
 downloads/
-aria2.session
+dist-release/
+
+# ---- 第三方二进制驱动（体积大，需自行下载）----
+drivers/
+
+# ---- .NET / WinUI3 构建产物 ----
+[Bb]in/
+[Oo]bj/
+*.user
+.vs/
