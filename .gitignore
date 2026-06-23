@@ -1,0 +1,37 @@
+# Local credentials and runtime state
+/config.json
+/session.json
+/app_settings.json
+/captured_api.json
+/download_history.db
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Build and release outputs
+bin/
+obj/
+**/bin/
+**/obj/
+/dist-release/
+*.nupkg
+*.msix
+*.msixbundle
+
+# IDE and user-specific files
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Download/runtime leftovers
+downloads/
+aria2.session
